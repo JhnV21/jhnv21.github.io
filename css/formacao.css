@@ -1,0 +1,252 @@
+.formacao {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  margin: 0 auto;
+  padding: 140px 20px;
+  max-width: 1200px;
+}
+
+.formacao h2 {
+  font-size: 8rem;
+  color: #141414;
+}
+
+.formacao h3 {
+  font-size: 4rem;
+  color: #141414;
+  margin-bottom: 40px;
+}
+
+.formacao h4 {
+  font-size: 2.25rem;
+  color: #8f8f8f;
+  margin-bottom: 30px;
+}
+
+.formacao-lista li::before {
+  content: "\2022";
+  color: #3deb5a;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.formacao-lista li {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+
+.formacao-titulo {
+  grid-column: 1 / -1;
+}
+
+.cursos {
+  position: relative;
+  grid-column: 1 / -1;
+  margin-top: 60px;
+}
+
+.cursos::after {
+  content: "";
+  position: absolute;
+  width: 853px;
+  height: 5px;
+  background-color: #3deb5a;
+  top: 35px;
+  right: 45px;
+}
+
+.idiomas {
+  text-align: right;
+  position: relative;
+}
+
+.idiomas::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 404px;
+  background-color: #e0e0e0;
+  top: 14px;
+  left: -76px;
+}
+
+.udemy {
+  margin-bottom: 50px;
+}
+
+.formacao-idiomas {
+  align-self: start;
+  justify-self: center;
+}
+
+.formacao-lista {
+  padding-left: 25px;
+}
+
+@media (max-width: 1225px) {
+  .cursos::after {
+    width: 800px;
+  }
+}
+
+@media (max-width: 1165px) {
+  .cursos::after {
+    width: 700px;
+    top: 30px;
+    right: 45px;
+  }
+  .idiomas::before {
+    top: 14px;
+    left: -86px;
+  }
+
+  .formacao h3 {
+    font-size: 3.5rem;
+  }
+
+  .formacao h4 {
+    font-size: 2rem;
+  }
+
+  .formacao-lista li {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1065px) {
+  .cursos::after {
+    width: 600px;
+  }
+
+  .idiomas::before {
+    top: 14px;
+    left: -56px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cursos::after {
+    width: 550px;
+  }
+
+  .idiomas::before {
+    top: 14px;
+    left: -36px;
+  }
+
+  .formacao h2 {
+    font-size: 7rem;
+  }
+
+  .formacao h3 {
+    font-size: 3.3rem;
+  }
+
+  .formacao h4 {
+    font-size: 1.9rem;
+  }
+
+  .formacao-lista li {
+    font-size: 1.25rem;
+    margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 870px) {
+  .cursos::after {
+    width: 450px;
+  }
+
+  .idiomas::before {
+    display: none;
+  }
+
+  .formacao {
+    grid-template-columns: auto;
+  }
+
+  .idiomas {
+    text-align: left;
+  }
+
+  .formacao-idiomas {
+    margin-top: 40px;
+    align-self: start;
+    justify-self: start;
+  }
+}
+
+@media (max-width: 775px) {
+  .formacao h2 {
+    font-size: 6rem;
+  }
+
+  .cursos {
+    margin-top: 40px;
+  }
+
+  .cursos::after {
+    width: 400px;
+  }
+}
+
+@media (max-width: 725px) {
+  .cursos::after {
+    width: 350px;
+  }
+}
+
+@media (max-width: 675px) {
+  .formacao {
+    padding-top: 80px;
+  }
+
+  .cursos::after {
+    width: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+  .formacao {
+    padding-top: 80px;
+  }
+
+  .formacao h2 {
+    font-size: 5rem;
+  }
+
+  .cursos::after {
+    width: 200px;
+  }
+}
+
+@media (max-width: 520px) {
+  .formacao h2 {
+    font-size: 4rem;
+  }
+
+  .cursos::after {
+    display: none;
+  }
+
+  .cursos {
+    margin: 30px 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .formacao h2 {
+    font-size: 4rem;
+  }
+  .formacao-lista li {
+    font-size: 1rem;
+  }
+
+  .cursos {
+    margin: 20px 0px;
+  }
+}

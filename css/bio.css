@@ -1,0 +1,120 @@
+.bio {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 94px;
+  margin: 0 auto;
+  padding: 25px 20px;
+  max-width: 1200px;
+}
+
+.bio h2 {
+  font-size: 8rem;
+  color: #141414;
+}
+
+.bio-content p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #525252;
+}
+
+.bio-content {
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  background-color: #f5f5f5;
+  padding: 15px 35px;
+  max-width: 780px;
+  position: relative;
+}
+
+.bio-content::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(135deg, #21bf3c 0%, #69ff82 100%);
+  width: 33px;
+  height: 33px;
+  border-radius: 5px;
+  top: -15px;
+  left: -15px;
+  z-index: -1;
+}
+
+.bio-content::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(135deg, #69ff82 0%, #21bf3c 100%);
+  width: 33px;
+  height: 33px;
+  border-radius: 5px;
+  bottom: -15px;
+  right: -15px;
+  z-index: -1;
+}
+
+@media (max-width: 1000px) {
+  .bio {
+    gap: 70px;
+  }
+
+  .bio h2 {
+    font-size: 7rem;
+  }
+
+  .bio-content p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .bio {
+    gap: 64px;
+  }
+
+  .bio h2 {
+    font-size: 6rem;
+  }
+
+  .bio-content p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .bio {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .bio h2 {
+    font-size: 6rem;
+  }
+
+  .bio-content p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .bio-content {
+    max-width: 543px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .bio {
+    gap: 30px;
+  }
+
+  .bio h2 {
+    font-size: 4.5rem;
+  }
+
+  .bio-content {
+    max-width: 346px;
+  }
+}
